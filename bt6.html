@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 6</title>
+</head>
+<body>
+<script>
+    let N=+prompt('nhập N')
+    function songuyento(N){
+    for (let i = 2;i<N; i++){
+        //tìm các số từ 1 đến N
+        if (N%i==0){
+            //nếu N chia hết cho i thì khoog phải số nuyên tố
+            return false;
+            // xác nhận giá trị sai và dừng lại ; trả về giá trị của hàm
+        }
+    }
+    return true// xác nhận giá trị đúng sau đó duyệt y để in
+}
+    for ( let i =2; i<=N;i++){
+        if (songuyento(i)){
+            // duyệt i đến N để tìm số nguyên tố từ 2 đến N của hàm songuyento
+            document.write(i+'</br>')
+        }
+    }
+</script>
+
+</body>
+</html>

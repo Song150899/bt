@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2> Viết chương trình tìm tích lớn nhất của hai phần tử liền kề</h2>
+<script>
+    let arr = [1, 3, 4, 8, 1, 3]
+    let maxtich = arr[0] * arr[1]
+    function tichmang(arr) {
+        for (let i = 1; i < arr.length; i++) {
+            tich = arr[i] * arr[i + 1]
+            if (tich > maxtich) {
+                maxtich = arr[i] * arr[i + 1]
+            }
+        }
+        return maxtich
+    }
+
+    document.write(tichmang(arr))
+</script>
+
+</body>
+</html>

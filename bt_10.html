@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n=+prompt('nhập n')
+    let S=0
+    function tinh(n){
+        for (i=1;i<=n;i++){
+            S=S+1/Math.pow(i,3)
+        //    tổng bằng tổng cộng 1 chia phân số mũ ba của n
+        }
+        document.write(S.toFixed(5)+'<br>')
+    //    toFixed lất làm tròn số thập phân theo số nhình nhâp (5)
+
+    }
+    tinh(n)
+</script>
+
+</body>
+</html>
